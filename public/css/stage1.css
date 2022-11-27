@@ -1,0 +1,52 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.stage1 {
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stage1-content {
+    width: 70%;
+    align-self: center;
+}
+.stage1-heading {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.stage1-date {
+    font-size: 1.2rem;
+    color: #D8D8D8;
+    text-align: right;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: #D8D8D8;
+    border: 0;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+p.sub-paragraph {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+

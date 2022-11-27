@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is Jane Doe?</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="css/home.css">
+
+    <script>
+        function checker() {
+            var name = prompt("이름을 알려주세요.")
+            if (name == null || name == "") {
+                txt = "이름을 알려달라니까!";
+                alert(txt);
+            } else {
+                txt = "어서 와!";
+                alert(txt);
+                window.location.href = "/uploads/stage1.html"
+            }
+        }
+        function stage2() {
+            var stage2Ans = prompt("비밀번호를 입력하세요.")
+            if (stage2Ans != 1234) {
+                txt = "틀렸어!";
+                alert(txt);
+            } else {
+                txt = "딩동댕!";
+                alert(txt);
+                window.location.href = "/uploads/stage2.html"
+            }
+        }
+        function stage3() {
+            var stage3Ans = prompt("비밀번호를 입력하세요.")
+            if (stage3Ans != 1234) {
+                txt = "틀렸어!";
+                alert(txt);
+            } else {
+                txt = "딩동댕!";
+                alert(txt);
+                window.location.href = "/uploads/stage3.html"
+            }
+        }
+        function stage4() {
+            var stage4Ans = prompt("비밀번호를 입력하세요.")
+            if (stage4Ans != 1234) {
+                txt = "틀렸어!";
+                alert(txt);
+            } else {
+                txt = "딩동댕!";
+                alert(txt);
+                window.location.href = "/uploads/stage4.html"
+            }
+        }
+        function stage5() {
+            var stage5Ans = prompt("비밀번호를 입력하세요.")
+            if (stage5Ans != 1234) {
+                txt = "틀렸어!";
+                alert(txt);
+            } else {
+                txt = "딩동댕!";
+                alert(txt);
+                window.location.href = "/uploads/stage5.html"
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="links-container">
+            <li class="link-item"><a href="/" class="link">home</a></li>
+            <li class="link-item"><a onclick = "checker()" class="link">blog</a></li>
+        </ul>
+    </nav>
+
+    <header class = "header">
+        <div class = "content">
+            <h1 class="heading">
+                <span class = "no-fill">진혜영</span>
+                <span class = "small">의 블로그에 어서 오세요!</span>
+                <hr>
+                <span class = "description">모르는 사람 서이추 안 받아용</span>
+            </h1>
+            <a onclick = "checker()" class = "btn">어쨌든 환영! &#127881;</a>
+        </div>
+    </header>
+    <div class = "container">
+        <h2>전체 글 보기</h2>
+        <div id="posts">
+            <div class = "post"><a onclick = "checker()">내 이름은 진혜영!</a></div>
+            <div class = "post"><a onclick = "stage2()">MBTI 20문 20답</a></div>
+            <div class = "post"><a onclick = "stage3()">모래알이든 바윗덩어리든 가라앉는 건 똑같다</a></div>
+            <div class = "post"><a onclick = "stage4()">모기 극혐!</a></div>
+            <div class = "post"><a onclick = "stage5()">밝은 햇살, 이 세상에게 인사를!</a></div>
+        </div>
+        <div id = "popup">
+            <img src="" alt="" id="selectedPost">
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
