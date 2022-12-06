@@ -11,11 +11,12 @@ let index = -1;
 
 function preload() {
   // TODO: 여기에 이미지 링크를 넣습니다.
-  img = loadImage('../img/logo.png');
+  img = loadImage('../img/stage1_졸라맨_1.png');
 }
 
 function setup() {
-  createCanvas(1000, 500);
+  var canvas = createCanvas(1000, 500);
+  canvas.parent("sketch-holder");
   // TODO: 여기에 버튼 위치, 크기를 지정합니다.
   btn = new Button(0, 0, 100, 100);
 }

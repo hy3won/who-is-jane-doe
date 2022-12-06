@@ -1,15 +1,17 @@
-* {
+*, *::before, *::after {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
 .stage1 {
+    display: flex;
     width: 100%;
     height: auto;
     margin-top: 200px;
     padding: 0 10vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -50,3 +52,52 @@ p.sub-paragraph {
     margin-bottom: 3rem;
 }
 
+
+#comments {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.comment_heading {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 100px;
+}
+
+.comment_container {
+    margin-top: 20px;
+    position: relative;
+    background-color: #E8E8E8;
+}
+
+
+.comment_card {
+    padding: 20px;
+    width: 70vw;
+    margin-bottom: 20px;
+}
+
+.comment_card h3 {
+    margin-bottom: 1rem;
+}
+
+.comment_card hr {
+    width: 100%;
+    height: 1px;
+    background-color: #D8D8D8;
+    border: 0;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+.comment_title {
+    font-size: 20px;
+}

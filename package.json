@@ -1,7 +1,6 @@
 {
   "name": "who-is-jane-doe",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
@@ -12,5 +11,7 @@
     "express-fileupload": "^1.4.0",
     "express.js": "^1.0.0",
     "nodemon": "^2.0.20"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

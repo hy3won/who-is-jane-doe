@@ -23,7 +23,7 @@
         }
         function stage2() {
             var stage2Ans = prompt("비밀번호를 입력하세요.")
-            if (stage2Ans != 1234) {
+            if (stage2Ans != 2222) {
                 txt = "틀렸어!";
                 alert(txt);
             } else {
@@ -34,7 +34,7 @@
         }
         function stage3() {
             var stage3Ans = prompt("비밀번호를 입력하세요.")
-            if (stage3Ans != 1234) {
+            if (stage3Ans != 3333) {
                 txt = "틀렸어!";
                 alert(txt);
             } else {
@@ -45,7 +45,7 @@
         }
         function stage4() {
             var stage4Ans = prompt("비밀번호를 입력하세요.")
-            if (stage4Ans != 1234) {
+            if (stage4Ans != 4444) {
                 txt = "틀렸어!";
                 alert(txt);
             } else {
@@ -56,7 +56,7 @@
         }
         function stage5() {
             var stage5Ans = prompt("비밀번호를 입력하세요.")
-            if (stage5Ans != 1234) {
+            if (stage5Ans != 5555) {
                 txt = "틀렸어!";
                 alert(txt);
             } else {
@@ -89,12 +89,73 @@
     </header>
     <div class = "container">
         <h2>전체 글 보기</h2>
+        <hr>
         <div id="posts">
-            <div class = "post"><a onclick = "checker()">내 이름은 진혜영!</a></div>
-            <div class = "post"><a onclick = "stage2()">MBTI 20문 20답</a></div>
-            <div class = "post"><a onclick = "stage3()">모래알이든 바윗덩어리든 가라앉는 건 똑같다</a></div>
-            <div class = "post"><a onclick = "stage4()">모기 극혐!</a></div>
-            <div class = "post"><a onclick = "stage5()">밝은 햇살, 이 세상에게 인사를!</a></div>
+            <div onclick = "checker()" class = "post-container">
+                <img src = "../img/everland.jpeg" alt = "">
+                <div class = "post"> 내 이름은 진혜영!
+                    <span class = "comment">(4)</span>
+                    <br>
+                    <span class = "post-detail">
+                        <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                    </span>
+                    <span class = "post-date">
+                        <br>2022.09.04
+                    </span>
+                </div>
+            </div>
+            <div onclick = "stage2()" class = "post-container">
+                <img src = "../img/kakaotalk.jpeg" alt = "">
+                <div class = "post"> MBTI 20문 20답
+                    <span class = "comment">(2)</span>
+                    <br>
+                    <span class = "post-detail">
+                        <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                    </span>
+                    <span class = "post-date">
+                        <br>2022.09.10
+                    </span>
+                </div>
+            </div>
+            <div onclick = "stage3()" class = "post-container">
+                <img src = "../img/kakaotalk2.jpg" alt = "">
+                <div class = "post"> 모래알이든 바윗덩어리든 가라앉는 건 똑같다
+                    <span class = "comment">(2)</span>
+                    <br>
+                    <span class = "post-detail">
+                        <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                    </span>
+                    <span class = "post-date">
+                        <br>2022.10.06
+                    </span>
+                </div>
+            </div>
+            <div onclick = "stage4()" class = "post-container">
+                <img src = "../img/kakaotalk3.png" alt = "">
+                    <div class = "post"> 모기 극혐!
+                        <span class = "comment">(1)</span>
+                        <br>
+                        <span class = "post-detail">
+                            <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                        </span>
+                        <span class = "post-date">
+                            <br>2022.10.28
+                        </span>
+                    </div>
+                </div>
+            <div onclick = "stage5()" class = "post-container">
+                <img src = "../img/kakaotalk4.jpeg" alt = "">
+                <div class = "post"> 밝은 햇살, 이 세상에게 인사를!
+                    <span class = "comment">(1)</span>
+                    <br>
+                    <span class = "post-detail">
+                        <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                    </span>
+                    <span class = "post-date">
+                        <br>2022.11.20
+                    </span>
+                </div>
+            </div>
         </div>
         <div id = "popup">
             <img src="" alt="" id="selectedPost">
