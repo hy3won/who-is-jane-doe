@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBTI 20문 20답</title>
+    <title>모래알이든 바윗덩어리든 가라앉는건 똑같다</title>
 
     <link rel="stylesheet" type="text/css" href="../js/style.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="/css/stage1.css">
+    <link rel="stylesheet" href="/css/stageD.css">
     <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
     <script src="../js/libraries/p5.min.js"></script>
     <script src="../js/libraries/p5.sound.min.js"></script>
-    <script src="../js/stage3_sketch.js"></script>
-    <script src="../js/stage3_enemy.js"></script>
-    <script src="../js/stage3_me.js"></script>
+    <script src="../js/stage3/stage3_sketch.js"></script>
+    <script src="../js/stage3/stage3_enemy.js"></script>
+    <script src="../js/stage3/stage3_me.js"></script>
+    <script src="../js/stage3/stage3_button.js"></script>
+    <script>
+        function stage4() {
+            var stage4Ans = prompt("비밀번호를 입력하세요.")
+            if (stage4Ans != 1010) {
+                txt = "틀렸어!";
+                alert(txt);
+            } else {
+                txt = "딩동댕!";
+                alert(txt);
+                window.location.href = "/uploads/stage4.html"
+            }
+        }
+    </script>
 </head>
 <body>
 
     <nav class="navbar">
         <ul class="links-container">
             <li class="link-item"><a href="/" class="link">home</a></li>
-            <li class="link-item"><a href="/uploads/stage1.html" class="link">blog</a></li>
+            <li class="link-item"><a onClick = stage4() class="link">다음 글로</a></li>
         </ul>
     </nav>
     
@@ -32,17 +46,17 @@
             <h1 class = "stage1-heading">모래알이든 바윗덩어리든 가라앉는건 똑같다</h1>
             <p class = "stage1-date"> 2022년 10월 1일</p>
             <hr>
-            <p class = "stage1-text"> (교수님의 메일 내용 캡쳐)
+            <p class = "stage1-text">
             </p><p class = "sub-paragraph">
-                (최유정에 대한 원망이 느껴지는 글. 조현병 증상이 드러나도록 말비빔 현상이 느껴지도록 쓸 계획)
+                올드보이의 명대사다. 맞아. 모래알이든 바윗덩어리든 가라앉는건 똑같아. 왜? 저는 앞으로 나아가고 있었어요. 그런데 다들 말을 막 하는거 있죠. 그래. 올드보이의 그 대사는, 말을 조심하라는 말이었다고. 교수님께서 그렇게 말씀하셔서 너무 서운했다 ㅠ. 그런데 왜 그러셨을까? 오 물론 교수님의 지와 적을 싫어하는건 아니에요. 솔직히 두려워요. 승아는 전기뱀장어야. 어떻게 이름이 최승아지? 교수님이랑 친해 보이던데… 하긴 친구는 좋은거니까. 교수님 근데 내가 더 잘 한다구요.  꼭 내일 점심은 워싱턴과 김정철을 만나 코시리카닌을 비틀꺼야. 아. 죄송해요 요즘 위장이 안좋아서. 어쨋든. 워턴은 대단한 사람이거든요. 원래 코가 큰 사람들이 지도를 잘 봐요. 하여튼 빠싸이에서 봐요! 아름다운 그날처럼…
             </p><p class = "sub-paragraph">
-                올드보이의 명대사다. 맞아. 모래알이든 바윗덩어리든 가라앉는건 똑같아. 왜? 저는 앞으로 나아가고 있었어요. 그런데 다들 말을 막 하는거 있죠. 그래. 올드보이의 그 대사는, 말을 조심하라는 말이었다고. 교수님께서 그렇게 말씀하셔서 너무 서운했다 ㅠ. 그런데 왜 그러셨을까? 오 물론 교수님의 지와 적을 싫어하는건 아니에요. 솔직히 두려워요. 유정이는 전기뱀장어야. 어떻게 이름이 최유정이지? 교수님이랑 친해 보이던데… 하긴 친구는 좋은거니까. 교수님 근데 내가 더 잘 한다구요.  꼭 내일 점심은 워싱턴과 김정철을 만나 코시리카닌을 비틀꺼야. 아. 죄송해요 요즘 위장이 안좋아서. 어쨋든. 워턴은 대단한 사람이거든요. 원래 코가 큰 사람들이 지도를 잘 봐요. 하여튼 빠싸이에서 봐요! 아름다운 그날처럼…
+                <span class = "blue">아래는 올드보이 게임이에요!</span>
+                <br><span class = "red">실수로 본인 뒤통수를 치지 않게 조심하세요~</span>
             </p><p class = "sub-paragraph">
                 오늘의 친구!
-            </p><p class = "sub-paragraph">
-                (아래에는 유정이와의 카톡 보여줌. 유정이가 기분이 안좋아보이고 말을 이상하게 하는 혜영씨를 걱정하는 내용. 답장은 하지 않음.)
-            </p><p class = "sub-paragraph">
-                (다음 포스트 비밀번호는 '4444'입니다. 실제 플레이에서는 각 포스트 별 미니게임을 클리어하면 비밀번호가 화면에 뜹니다.)
+                </p>
+                <img src = "../img/stage3_kakaotalk.jpeg" alt = "">
+                <br>
             <div id = "sketch-holder">
             
             </div>
@@ -65,9 +79,16 @@
                         <hr>
                     </div>
                     <div class = "comment_card">
+                    <div class = "comment_card">
+                        <h3 class = "comment_title">지혜</h3>
+                        <p>
+                            연락도 안받고… 학교도 안나오고… 무슨일이야…ㅠㅠ
+                        </p>
+                        <hr>
+                    </div>
                         <h3 class = "comment_title">대왕마님</h3>
                         <p>
-                            와...ㄷㄷ
+                            와 이거 ㄹㅇ 조현병 아님? ㄷㄷ
                         </p>
                         <hr>
                     </div>

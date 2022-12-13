@@ -9,19 +9,32 @@
     <link rel="stylesheet" type="text/css" href="../js/style.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="/css/stage1.css">
+    <link rel="stylesheet" href="/css/stageD.css">
     <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
     <script src="../js/libraries/p5.min.js"></script>
     <script src="../js/libraries/p5.sound.min.js"></script>
     <script src="../js/stage4_sketch.js"></script>
+    <script>
+        function stage5() {
+            var stage5Ans = prompt("비밀번호를 입력하세요.")
+            if (stage5Ans != 9998) {
+                txt = "틀렸어!";
+                alert(txt);
+            } else {
+                txt = "딩동댕!";
+                alert(txt);
+                window.location.href = "/uploads/stage5.html"
+            }
+        }
+    </script>
 </head>
 <body>
 
     <nav class="navbar">
         <ul class="links-container">
             <li class="link-item"><a href="/" class="link">home</a></li>
-            <li class="link-item"><a href="/uploads/stage1.html" class="link">blog</a></li>
+            <li class="link-item"><a onClick = "stage5()" class="link">다음 글로</a></li>
         </ul>
     </nav>
     
@@ -30,12 +43,15 @@
             <h1 class = "stage1-heading">모기 극혐!</h1>
             <p class = "stage1-date">2022년 10월 8일</p>
             <hr>
-            <p class = "stage1-text"> 사진: 벽에 피가 묻어있는 사진. 모기 치고 좀 많음
+            <p class = "stage1-text">
+                <img src = "../img/stage4_모기극혐.png" alt = "">
                 <br>
-                최유정을 죽였음을 암시하는 글
+                하루종일 앵앵거리던 모기를 아주 납작하게 눌러놨다구..! 내 피를 바닥에 흘리면서 죽은 그녀석은 마치 파브렐 라이투스를 닮았어요. 하여튼 모기를 잡으니까 기분이 너무 좋아졌다..!! 벽이 좀 더러워졌지만… 그래도 이제 편하게 잘 수 있겠지! 게임도 모기 잡는 게임!
+                <span class = "red">모기를 전부 때려죽여!</span>
+                <br> <br>
+                오늘의 친구!
+                <img src = "../img/stage4_kakaotalk.jpeg" alt = "">
                 <br>
-                이선우씨와 나눈 카톡 캡쳐. 학교 안 나오는 혜영씨를 걱정하는 내용. 역시 답장은 X
-                <br> (다음 포스트 비밀번호는 '5555'입니다. 실제 플레이에서는 각 포스트 별 미니게임을 클리어하면 비밀번호가 화면에 뜹니다.)
             </p>
             <div id = "sketch-holder">
             
@@ -52,9 +68,22 @@
                     <div class = "comment_card">
                         <h3 class = "comment_title">민아</h3>
                         <p>
-                           혜영아 너 유정이랑 연락 돼?
+                           혜영아 너 승아랑 연락 돼?
                         </p>
                         <hr>
+                    </div>
+                    <div class = "comment_card">
+                        <h3 class = "comment_title">선우</h3>
+                        <p>
+                           너 내일 잠깐 나 좀 보자.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class = "comment_card">
+                        <h3 class = "comment_title">혜원스님</h3>
+                        <p>
+                           <span class = "red">아무리 모기와 같은 미물이라도 살생은 나쁜 것이거늘….</span>
+                        </p>
                     </div>
                 </div>
             </div>

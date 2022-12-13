@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../js/style.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="/css/stage1.css">
+    <link rel="stylesheet" href="/css/stageD.css">
     <link rel="shortcut icon" href="../img/favicon-32x32.png">
 
     <script src="../js/libraries/p5.min.js"></script>
@@ -18,15 +18,25 @@
     <script src="../js/stage5_paddle.js"></script>
     <script src="../js/stage5_brick.js"></script>
     <script src="../js/stage5_sketch.js"></script>
-    <script src="../js/stage5_eslintrc.js"></script>
-
+    <script>
+        function stage6() {
+            var stage5Ans = prompt("비밀번호를 입력하세요.")
+            if (stage5Ans != 9999) {
+                txt = "틀렸어!";
+                alert(txt);
+            } else {
+                txt = "딩동댕!";
+                alert(txt);
+                window.location.href = "/uploads/stage6.html"
+            }
+        }
+    </script>
 </head>
 <body>
 
     <nav class="navbar">
         <ul class="links-container">
             <li class="link-item"><a href="/" class="link">home</a></li>
-            <li class="link-item"><a href="/uploads/stage1.html" class="link">blog</a></li>
         </ul>
     </nav>
     
@@ -35,12 +45,13 @@
             <h1 class = "stage1-heading">밝은 햇살, 이 세상에게 인사를!</h1>
             <p class = "stage1-date"> 2022년 11월 10일</p>
             <hr>
-            <p class = stage1-text>깻잎마을 여러분! 밝은 오후! 귀여운 날씨~! 마치 시가 너무 많이 흘러서 간이 되었듯이, 깊은 잠이 오랜만에 왔다구요. 마른 하늘에 박수를! 세상이 되길. 왜? 그 네 그렇게 됐다는거죠. 어쨋든 본인이 그러고 싶다는데 어쩌겠어요. 선우씨. 그래도 바닥은 더럽히면 안되죠! 혼나요~ 그래도 나의 입맞춤으로 많은것을 뉘우쳤으리라 믿어요~ 그래서 한번 봐드리는거랍니다. 그 안에서는 조용히 계세요! 아! 그래도 친구와 함께잖아요! 아 조용! 조용히 하라구요! 세상에 세스키라의 먹이로 던져주겠어요 조를 명을 꺼주세요 이제. 하늘이 너무 캄캄해서 귀가 안보여요 그냥. 몰라? 왜그렇지못한거지? 민아는 그래도 내 말을 들어주는 유일한 친구였는데. 휴 이젠 내 말만 들을 수 있게 되어버렸네… 그래도 기분은 좋아요 민아는. 군인들이 나팔을 불 때 세상을 향해서 나아가겠어요! 맑은 오후~ 귀여운 아침! 저는 이만 차차카토를 마시러 빈 방으로.
-            <br> (실제 플레이에서는 글 중간에 텍스트로 링크가 삽입됩니다.)
+            <p class = "stage1-text">깻잎마을 여러분아! 밝은 오후! 귀여운 날씨~! 마치 시가 너무 많이 흘러서 간이 되었듯이, 깊은 잠이 오랜만에 왔다구요. 마른 하늘에 박수를! 세상이 되길. 왜? 그 네 그렇게 됐다는거죠. 어쨋든 본인이 그러고 싶다는데 어쩌겠어요. 선우씨. 그래도 바닥은 더럽히면 안되죠! 혼나요~ 그래도 나의 입맞춤으로 많은것을 뉘우쳤으리라 믿어요~ 그래서 한번 봐드리는거랍니다. 그 안에서는 조용히 계세요! 아! 그래도 친구와 함께잖아요! 아 조용! 조용히 하라구요! 세상에 세스키라의 먹이로 던져주겠어요 <span onclick = "stage6()">조를 명을 꺼주세요</span> 이제. 하늘이 너무 캄캄해서 귀가 안보여요 그냥. 몰라? 왜그렇지못한거지? 민아는 그래도 내 말을 들어주는 유일한 친구였는데. 휴 이젠 내 말만 들을 수 있게 되어버렸네… 그래도 기분은 좋아요 민아는. 군인들이 나팔을 불 때 세상을 향해서 나아가겠어요! 맑은 오후~ 귀여운 아침! 저는 이만 차차카토를 마시러 빈 방으로.
+                <br>
+                <span class = "blue">플레이는 키보드로 하세요!</span> <br>
+                <span class = "red">왼쪽 아래 글씨는 신경쓰지 마시구요.</span>
             <div id = "sketch-holder">
         
             </div> 
-            <br> <li class = "link-item"><a href="/uploads/stage6.html" class="link">다음 스테이지로</a></li>
         </p>
 
         </div>
@@ -56,7 +67,7 @@
                     <div class = "comment_card">
                         <h3 class = "comment_title">외로운다람쥐</h3>
                         <p>
-                            확@실$유|출&픽 배신없습니다 www.totototozoa.co.ww
+                            확@실$유|출&픽 배신없습니다 <a href="/uploads/index.html">www.totototozoa.co.ww</a>
                         </p>
                         <hr>
                     </div>

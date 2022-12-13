@@ -3,8 +3,65 @@
     padding:0;
     box-sizing: border-box;
 }
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    position: relative;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+::selection {
+    background: #1b1b1b;
+    color: #FFFFFF;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background: black;
+    z-index: 9;
+}
+
+.links-container {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    padding: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header {
+    margin-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: url(../img/header.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .stage1 {
+    background-color: black;
     display: flex;
     width: 100%;
     height: auto;
@@ -22,6 +79,7 @@
     align-self: center;
 }
 .stage1-heading {
+    color: #fff;
     font-size: 3rem;
     font-weight: 500;
 }
@@ -47,11 +105,6 @@ p {
     line-height: 2em;
 }
 
-p img {
-    width: 100%;
-    height: 100%;
-}
-
 p.sub-paragraph {
     color: gray;
     margin-top: 3rem;
@@ -69,11 +122,12 @@ span.blue {
 }
 
 span.red {
-    color: red
+    color: red;
 }
 
 
 #comments {
+    color: white;
     display: flex;
     width: 100%;
     height: auto;
@@ -95,7 +149,7 @@ span.red {
 .comment_container {
     margin-top: 20px;
     position: relative;
-    background-color: #E8E8E8;
+    background-color: #1b1b1b;
 }
 
 

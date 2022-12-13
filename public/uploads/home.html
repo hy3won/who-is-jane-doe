@@ -10,20 +10,24 @@
     <link rel="stylesheet" href="css/home.css">
 
     <script>
-        function checker() {
-            var name = prompt("이름을 알려주세요.")
+
+        function onForm() {
+            var name = prompt("당신의 이름을 알려주세요.")
             if (name == null || name == "") {
-                txt = "이름을 알려달라니까!";
-                alert(txt);
-            } else {
-                txt = "어서 와!";
-                alert(txt);
-                window.location.href = "/uploads/stage1.html"
+               no = "이름이 뭐냐니까?";
+               alert(no);
+            }
+            else {
+            txt = "어서 와!";
+            alert(txt);
+            localStorage.setItem("username", name);
+            window.location.href = "/uploads/stage1.html"
             }
         }
+
         function stage2() {
             var stage2Ans = prompt("비밀번호를 입력하세요.")
-            if (stage2Ans != 2222) {
+            if (stage2Ans != "0516") {
                 txt = "틀렸어!";
                 alert(txt);
             } else {
@@ -32,9 +36,10 @@
                 window.location.href = "/uploads/stage2.html"
             }
         }
+
         function stage3() {
             var stage3Ans = prompt("비밀번호를 입력하세요.")
-            if (stage3Ans != 3333) {
+            if (stage3Ans != 9999) {
                 txt = "틀렸어!";
                 alert(txt);
             } else {
@@ -43,9 +48,10 @@
                 window.location.href = "/uploads/stage3.html"
             }
         }
+
         function stage4() {
             var stage4Ans = prompt("비밀번호를 입력하세요.")
-            if (stage4Ans != 4444) {
+            if (stage4Ans != 1010) {
                 txt = "틀렸어!";
                 alert(txt);
             } else {
@@ -54,9 +60,10 @@
                 window.location.href = "/uploads/stage4.html"
             }
         }
+
         function stage5() {
             var stage5Ans = prompt("비밀번호를 입력하세요.")
-            if (stage5Ans != 5555) {
+            if (stage5Ans != 9998) {
                 txt = "틀렸어!";
                 alert(txt);
             } else {
@@ -72,7 +79,7 @@
     <nav class="navbar">
         <ul class="links-container">
             <li class="link-item"><a href="/" class="link">home</a></li>
-            <li class="link-item"><a onclick = "checker()" class="link">blog</a></li>
+            <li class="link-item"><a onclick = "onForm()" class="link">내 이름은 진혜영!</a></li>
         </ul>
     </nav>
 
@@ -84,20 +91,36 @@
                 <hr>
                 <span class = "description">모르는 사람 서이추 안 받아용</span>
             </h1>
-            <a onclick = "checker()" class = "btn">어쨌든 환영! &#127881;</a>
+            <div>
+                <input type="checkbox" id="layerPopup">
+                <label for="layerPopup">
+                    들어오기 전에 이거 읽어봐
+                </label>
+                <div id="layer_bg">
+                    <div id="popup">
+                        <h2>
+                            주의사항
+                            <label for="layerPopup">X</label>
+                        </h2>
+                        1. 포스트는 '내 이름은 진혜영!'부터, 날짜 순차적으로 열람해주세요. <br> <br>
+                        2. '내 이름은 진혜영!'을 제외한 포스트에는 비밀번호가 걸려 있습니다. 직전 포스트의 미니게임을 클리어하면 비밀번호가 공개됩니다. <br><br>
+                        3. 회색 글씨는 스토리 진행에 필수적이지 않은 내용입니다.
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <div class = "container">
         <h2>전체 글 보기</h2>
         <hr>
         <div id="posts">
-            <div onclick = "checker()" class = "post-container">
+            <div onclick = "onForm()" class = "post-container">
                 <img src = "../img/everland.jpeg" alt = "">
                 <div class = "post"> 내 이름은 진혜영!
                     <span class = "comment">(4)</span>
                     <br>
                     <span class = "post-detail">
-                        <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                        <br>내 이름은 진혜영, 陳慧姈, 슬기로울 혜, 슬기로울 영. 할아버지는 항상 깊은 생각을 가진 사람이 되라고 말씀하셨다. ...
                     </span>
                     <span class = "post-date">
                         <br>2022.09.04
@@ -105,12 +128,11 @@
                 </div>
             </div>
             <div onclick = "stage2()" class = "post-container">
-                <img src = "../img/kakaotalk.jpeg" alt = "">
                 <div class = "post"> MBTI 20문 20답
                     <span class = "comment">(2)</span>
                     <br>
                     <span class = "post-detail">
-                        <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                        <br>1) 나의 이상형은? 나는 내 말을 잘 들어주는 사람이 좋다. 현명하고, 배울 점이 있는 사람. 2) 내가 태어나서 가장 열정적으로 배운 것은? ...
                     </span>
                     <span class = "post-date">
                         <br>2022.09.10
@@ -118,12 +140,11 @@
                 </div>
             </div>
             <div onclick = "stage3()" class = "post-container">
-                <img src = "../img/kakaotalk2.jpg" alt = "">
                 <div class = "post"> 모래알이든 바윗덩어리든 가라앉는 건 똑같다
                     <span class = "comment">(2)</span>
                     <br>
                     <span class = "post-detail">
-                        <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                        <br>올드보이의 명대사다. 맞아. 모래알이든 바윗덩어리든 가라앉는건 똑같아. 왜? 저는 앞으로 나아가고 있었어요. 그런데 다들 말을 막 하는거 있죠. ...
                     </span>
                     <span class = "post-date">
                         <br>2022.10.06
@@ -131,12 +152,11 @@
                 </div>
             </div>
             <div onclick = "stage4()" class = "post-container">
-                <img src = "../img/kakaotalk3.png" alt = "">
                     <div class = "post"> 모기 극혐!
                         <span class = "comment">(1)</span>
                         <br>
                         <span class = "post-detail">
-                            <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                            <br>하루종일 앵앵거리던 모기를 아주 납작하게 눌러놨다구..! 내 피를 바닥에 흘리면서 죽은 그녀석은 마치 파브렐 라이투스를 닮았어요. ...
                         </span>
                         <span class = "post-date">
                             <br>2022.10.28
@@ -144,12 +164,11 @@
                     </div>
                 </div>
             <div onclick = "stage5()" class = "post-container">
-                <img src = "../img/kakaotalk4.jpeg" alt = "">
                 <div class = "post"> 밝은 햇살, 이 세상에게 인사를!
                     <span class = "comment">(1)</span>
                     <br>
                     <span class = "post-detail">
-                        <br>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+                        <br>깻잎마을 여러분아! 밝은 오후! 귀여운 날씨~! 마치 시가 너무 많이 흘러서 간이 되었듯이, 깊은 잠이 오랜만에 왔다구요. 마른 하늘에 박수를! ...
                     </span>
                     <span class = "post-date">
                         <br>2022.11.20

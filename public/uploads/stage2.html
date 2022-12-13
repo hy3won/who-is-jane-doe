@@ -16,13 +16,26 @@
     <script src="../js/libraries/p5.sound.min.js"></script>
     <script src="../js/stage2_sketch.js"></script>
     <script src="../js/stage2_button.js"></script>
+    <script>
+        function stage3() {
+            var stage3Ans = prompt("비밀번호를 입력하세요.")
+            if (stage3Ans != 9999) {
+                txt = "틀렸어!";
+                alert(txt);
+            } else {
+                txt = "딩동댕!";
+                alert(txt);
+                window.location.href = "/uploads/stage3.html"
+            }
+        }
+    </script>
 </head>
 <body>
 
     <nav class="navbar">
         <ul class="links-container">
             <li class="link-item"><a href="/" class="link">home</a></li>
-            <li class="link-item"><a href="/uploads/stage1.html" class="link">blog</a></li>
+            <li class="link-item"><a onClick="stage3()" class="link">다음 글로</a></li>
         </ul>
     </nav>
     
@@ -32,41 +45,96 @@
             <p class = "stage1-date"> 2022년 9월 10일</p>
             <hr>
             <p class = "stage1-text">
-                1) 나의 이상형은?
                 <p class = "sub-paragraph">
-                나는 내 말을 잘 들어주는 사람이 좋다. 현명하고, 배울 점이 있는 사람.
+                    1) 나의 이상형은?
+                    <br>
+                    나는 내 말을 잘 들어주는 사람이 좋다. 현명하고, 배울 점이 있는 사람.
             </p><p class = "sub-paragraph">
-                2) 내가 태어나서 가장 열정적으로 배운 것은?
+                2) 내가 태어나서 가장 열정적으로 배운 것은? <br>
+                아마 사진과 포토샵이 아닐까?
+                <span class = "bold">작년 한 학기를 휴학했던 것도</span> 사실 사진을 배우고 싶었기 때문이고, 북유럽에 교환학생을 간 것도 아름다운 풍경을 사진에 담고 싶었기 때문이다.
             </p><p class = "sub-paragraph">
-                아마 사진과 포토샵이 아닐까? 작년 한 학기를 휴학했던 것도 사실 사진을 배우고 싶었기 때문이고, 북유럽에 교환학생을 간 것도 아름다운 풍경을 사진에 담고 싶었기 때문이다.
+                3) 내가 좋아하는 계절과 시간대는? <br>
+                나는 초여름 밤 아파트 단지의 습하고 이슬 맺히는 도로가 좋아요   
             </p><p class = "sub-paragraph">
-                3)내가 좋아하는 계절과 시간대는?
+                4) 내가 가장 많이 쓰는 유행어는?
+                <br>
+                씹덕 말투… 랄까나..?… 아 그리고 이마리야… 이거..!
             </p><p class = "sub-paragraph">
-                나는 초여름 밤 아파트 단지의 습하고 이슬 맺히는 도로가 좋다..!
-            </p><p class = "sub-paragraph">
-                4)내가 가장 많이 쓰는 유행어는?
-            </p><p class = "sub-paragraph">
-                씹덕 말투… 랄까나..?
-            </p><p class = "sub-paragraph">
-                5)내 생각에 내가 가장 예뻤던 시기는?
-            </p><p class = "sub-paragraph">
+                5) 내 생각에 내가 가장 예뻤던 시기는?
+                <br>
                 5살때….
             </p><p class = "sub-paragraph">
-                6) 나는 몰랐지만 남이 말해줘서 알게 된 나의 특징은 무엇이 있는가?
-            </p><p class = "sub-paragraph">
+                6) 나는 몰랐지만 남이 말해줘서 알게 된 나의 특징은 무엇이 있는가? <br>
+                <span class = "bold">딱히 없는 듯. 나는 겉으로 봤을 때 무뚝뚝한 사람이고, 눈물이 없지만, 소극적이고 착하다.(고 생각하는데 남들은 아니라고 한다.)</span>
                 딱히 없는 듯. 나는 겉으로 봤을 때 무뚝뚝한 사람이고, 눈물이 없지만, 소극적이고 착하다.
             </p><p class = "sub-paragraph">
                 7) 내가 빠지지 않고 하는 하루 일과 중 가장 특이한 행동은?
             </p><p class = "sub-paragraph">
-                아침에 일어나서 10분 명상하기..? 친구들은 허경영 같다고 놀린다.
+                7) 내가 빠지지 않고 하는 하루 일과 중 가장 특이한 행동은?
+                <br>
+                아침에 일어나서 10분 명상하기..? 친구들은 허경영 같다고 놀린다. 사실 맨날 지키는 것은 아니다
             </p><p class = "sub-paragraph">
                 8) 우울할 때 하는 행동은?
-            </p><p class = "sub-paragraph">
+                <br>
                 내 사진 위에 웃는 얼굴을 그려본다. 딱히 감정적인 행동은 아니고, 그러면 조금 기분이 좋아져요
-                <br> (다음 포스트 비밀번호는 '3333'입니다. 실제 플레이에서는 각 포스트 별 미니게임을 클리어하면 비밀번호가 화면에 뜹니다.)
+            </p><p class = "sub-paragraph">
+                9) 학점에 욕심이 있는 편?
+                <br>
+                <span class = "bold">의외로 그런 것에 신을 경을 많이 쓰는 편이다.
+                </span>
+            </p><p class = "sub-paragraph">
+                10) 좋아하는 영화 3가지?
+                <br>
+                올드보이, 토이스토리, 쏘우 시리즈
+            </p><p class = "sub-paragraph">
+                11) 좋아하는 음식 3가지
+                <br>
+                육사시미, 곱창, 파스타
+            </p><p class = "sub-paragraph">
+                12) 조건 없이 초능력을 하나 가질 수 있다면 어떤 초능력?
+                <br>
+                사람의 마음을 읽는 능력!!
+            </p><p class = "sub-paragraph">
+                13) 내가 자주 하는 상상은?
+                <br>
+                <span class = "bold">2011년 3월쯤에 초등학교 컴퓨터 시간에 우연히 비트코인에 대해서 알게 된 다음에, 집에서 재미로 새뱃돈 10만원을 거기에 다 넣고 잊어버린 다음에, 그걸 2020년에 깨달아서 80억을 찾은 다음에!, 그 중에 40억으로 건물을 담보대출 받아서 사고(혹시 모르니까), 나머지를 테슬라에 바로 넣어서 1년정도 버텨서 150억대의 자산가가 된다! 비상금 10억을 제외한 나머지를 전부 건물에 투자해서 부동산 재벌이 되어서 떵떵거리며 살아야지!!
+                </span>
+            </p><p class = "sub-paragraph">
+                14) 핸드폰에서 자주하는 어플 세 가지는?
+                <br>
+                유튜브, 멜론, 탕탕특공대
+            </p><p class = "sub-paragraph">
+                15) 유튜버가 된다면 올리고 싶은 컨텐츠는?
+                <br>
+                브이로그..? 클라이밍… 뭐 그런거…
+            </p><p class = "sub-paragraph">
+                16) 나의 이성적인 매력 3 가지
+                <br>
+                1. 시니컬하다 <br>2. 매사에 열심히 임하려고 함 <br>3. 솔직히 조금 귀여운 것 같기도...?
+            </p><p class = "sub-paragraph">
+                17) 집에 방이 하나 더 생긴다면 무엇을 하는 장소로 만들고 싶은지?
+                <br>
+                그러느니 그냥 더 싼 자취방을 가겠음…
+            </p><p class = "sub-paragraph">
+                18) 내가 좋아하는 외국어는?
+                <br>
+                일단 가장 싫어하는건 자바 스크립트이다…
+            </p><p class = "sub-paragraph">
+                19) 나의 하루 일과 중 가장 귀찮은 것은?
+                <br>
+                아침에 일어나는 것…
+            </p><p class = "sub-paragraph">
+                20) 20문 20답 후 느낀 것은?
+                <br>
+                너무 길다… 귀찮다 이마리야…
             </p>
+            </p><p class = "sub-paragraph">
+                <span class = "blue">그럼 제 엠비티아이를 맞춰보세요!</span>
+                <br>
+                <span class = "red">반대로 입력했다간~ 알아서 해~!</span>
             </p>
-            <div id = "sketch-holder">
+                <div id = "sketch-holder">
             
             </div>
         </div>
@@ -80,7 +148,7 @@
                         <img href = "../img/logo.png" />
                     </div>
                     <div class = "comment_card">
-                        <h3 class = "comment_title">유정</h3>
+                        <h3 class = "comment_title">승아</h3>
                         <p>
                             오! 너 나랑 엠비티아이 완전 반대다!
                         </p>

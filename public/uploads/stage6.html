@@ -15,20 +15,12 @@
 
     <script src="../js/libraries/p5.min.js"></script>
     <script src="../js/libraries/p5.sound.min.js"></script>
-    <script src="../js/stage1.js"></script>
     <script src="../js/stage6_sketch.js"></script>
-    <script src="../js/stage6_button.js"></script>
 
     <script type = "text/javascript">
-        function showID(id) {
-            obj = document.getElementById(id);
-            
-        if(obj.style.display == "none")
-            obj.style.display = "inline";
-        else
-            obj.style.display = "none";
-        }
-
+        alert("이봐요, 당신.")
+        var you = localStorage.getItem("username")
+        alert("그래요, 저랑 창의 알고리즘 겹강인 " + you + " 씨.");
 
     </script>
 </head>

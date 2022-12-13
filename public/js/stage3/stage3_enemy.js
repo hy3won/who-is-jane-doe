@@ -1,25 +1,33 @@
-class Button {
-  constructor(x, y, w, h) {
+class Enemy {
+  constructor(x, y, w, h, hidden) {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
 
+    this.img = loadImage('../img/stage3_man.png');
+
     this.isClicked = false;
+
+    this.hidden = hidden;
+    this.text = null;
   }
 
   show() {
-    if (this.over()) {
-      fill(220);
-    } else {
-      fill(255);
+    image(this.img, this.x, this.y, this.w, this.h);
+
+    if (!this.text) {
+      this.text = random(0, 1) > 0.5 ? '교수' : '최승아';
     }
 
-    rect(this.x, this.y, this.w, this.h);
+    if (this.hidden) {
+      text(this.text, this.x + 30, this.y);
+    }
+  }
 
-    fill(0);
-    textSize(18);
-    text('클릭', this.x + this.w / 2 - 18, this.y + this.h / 2 + 5);
+  move(move_x, move_y) {
+    this.x += move_x;
+    this.y += move_y;
   }
 
   over() {
@@ -48,5 +56,9 @@ class Button {
 
     this.isClicked = false;
     return false;
+  }
+
+  cought() {
+    this.y = -999;
   }
 }
